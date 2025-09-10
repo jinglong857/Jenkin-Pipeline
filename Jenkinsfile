@@ -10,14 +10,14 @@ pipeline {
 
     stage('Unit and Integration Tests') {
       steps {
-        echo 'Run unit tests and integration tests to ensure components work together.'
+        echo 'Running unit tests and integration tests to ensure components work together.'
         echo 'Tool: JUnit with Maven Surefire/Failsafe'
       }
     }
 
     stage('Code Analysis') {
       steps {
-        echo 'Analyse code quality against standards.'
+        echo 'Analyzing code quality against standards.'
         echo 'Tool: SonarQube'
       }
     }
