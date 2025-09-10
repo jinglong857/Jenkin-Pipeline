@@ -24,21 +24,21 @@ pipeline {
 
     stage('Security Scan') {
       steps {
-        echo 'Scan the code for vulnerabilities.'
+        echo 'Scanning the code for vulnerabilities.'
         echo 'Tool: OWASP Dependency-Check'
       }
     }
 
     stage('Deploy to Staging') {
       steps {
-        echo 'Deploy the application to a staging server.'
+        echo 'Deploying the application to a staging server.'
         echo 'Tool: Ansible to AWS EC2'
       }
     }
 
     stage('Integration Tests on Staging') {
       steps {
-        echo 'Run integration/End-to-end tests against staging.'
+        echo 'Running integration/End-to-end tests against staging.'
         echo 'Tool: Selenium WebDriver'
       }
     }
