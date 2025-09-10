@@ -45,7 +45,7 @@ pipeline {
 
     stage('Deploy to Production') {
       steps {
-        echo 'Deploy the application to a production server.'
+        echo 'Deploying the application to a production server.'
         echo 'Tool: Ansible to AWS EC2'
       }
     }
